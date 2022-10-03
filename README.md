@@ -2,10 +2,10 @@
 
 ## Stack
 
+Pour faciliter la lecture du code et du test, le front et le back cohabitent au sein d'un seul et même projet.
+
 - Symfony 5.4
 - VueJS 2.7
-
-Pour faciliter la lecture du code et du test, le front et le back cohabitent au sein d'un seul et même projet.
 
 ## API
 
@@ -25,3 +25,20 @@ La gestion de Vue se fait avec l'aide de Webpack Encore et Stimulus bridge.
 Les appels API sont exécutés avec la librairie Axios.
 
 Bootstrap 5 est chargé en cdn afin d'ajouter du style aux éléments HTML.
+
+## Execution
+
+Plusieurs commandes sont nécessaires pour exécuter le projet.
+Il est donc indispensable d'avoir au préalable installé les outils suivants :
+- composer
+- node / npm
+- symfony cli
+
+Récupérer les dépendances PHP :
+- composer install
+
+Générer les assets
+- npm run build
+
+Lancer le serveur
+- symfony server:start
